@@ -1,0 +1,11 @@
+<p>classandstylebind works!</p>
+<div>THIS IS THE ANGULAR PROJECT</div>
+<div *ngIf = "ShowElement">Show This Content</div>
+<div [ngSwitch]="Course">
+    <p *ngSwitchCase="'java'">Java Course Selected</p>
+    <p *ngSwitchCase="'angular'">Angular Courses Selected</p>
+    <p *ngSwitchDefault>Invalid Course</p>
+</div>
+<ul>
+    <li *ngFor="let name of names">{{name}}</li>
+</ul>
